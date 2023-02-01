@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingUserActivity"
+    android:orientation="vertical"
+    android:background="@color/mintGreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/darkGray"
+                android:layout_width="265dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="User Information"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                />
+
+            <ImageButton
+                android:id="@+id/IButton_questions_activity_setting_user"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/question"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"/>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/plant_tree"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="15dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TV_Username_activity_setting_user"
+                android:layout_marginLeft="20dp"
+                android:textColor="@color/black"
+                android:layout_width="265dp"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:text="Momo"
+                android:textSize="25dp"/>
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SmartFarm Farmer"
+                android:layout_marginTop="5dp"
+                android:textColor="@color/Gray"/>
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/smartphone"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/TV_phone_number_activity_setting_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="+31 41 42 53 23 54"
+                android:textColor="@color/darkGray"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@drawable/email"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:id="@+id/TV_email_activity_setting_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yipyip@bender.com"
+                android:textColor="@color/darkGray"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/layout_change_information_activity_setting_user">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/tools"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Information"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/darkGray"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/layout_vhange_password_activity_setting_user">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/password"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Password"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/darkGray"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:id="@+id/layout_delete_account_activity_setting_user">
+
+        <ImageView
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/trash_can"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Account"
+            android:layout_marginTop="10dp"
+            android:textSize="20dp"
+            android:textColor="@color/darkGray"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,92 @@
+<resources>
+    <string name="app_name">smartfarm</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="title_activity_forgot_password">ForgotPasswordActivity</string>
+    <string name="title_activity_singup">SignupActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_login_in">Login</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+
+    <string name="TV_temperature">Temperature</string>
+    <string name="TV_Humidity">Humidity</string>
+    <string name="TV_percent_sign"> %</string>
+    <string name="TV_celcius_sign"> C</string>
+
+    <!-- Fragment_sign_up.xml -->
+    <string name="TV_fullname">Full Name</string>
+    <string name="TV_confirmpassword">Confirm Password</string>
+    <string name="TV_signin">Signin</string>
+    <string name="TV_already_account">Already have an account?</string>
+    <string name="title_activity_fragment_forgot_password">FragmentForgotPassword</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+
+    <!-- reused strings for the register and login -->
+    <string name="prompt_email">Email</string>
+    <string name="TV_email_address">Email address</string>
+    <string name="Str_password">Password</string>
+    <string name="Str_Forgot_password">Forgot Password?</string>
+    <string name="TV_no_account">Do not have an account?</string>
+    <string name="TV_signup">Signup</string>
+
+    <!-- Fragment_forgot_email.xml -->
+    <string name="TV_confirmemail">Confirm Email</string>
+    <string name="Button_send">Send</string>
+
+    <!-- Fragment_Top_Design_Login_registration.xml -->
+    <string name="TV_Title_login_Activity">Welcome</string>
+    <string name="TV_Second_Title_login_Activity">Sign in to continue!</string>
+    <string name="TV_Title_Sign_up_Activity">Create account</string>
+    <string name="TV_Second_Title_Sign_up_Activity">Sign up to continue!</string>
+    <string name="TV_Title_Forgot_Pass_Activity">Forgot your password?</string>
+    <string name="TV_Second_Title_Forgot_Pass_Activity">Fill in your email address</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <!-- activity_home.xml -->
+    <string name="TV_Title_home_Activity">Welcome Farmer</string>
+    <string name="TV_Second_Title_home_Activity">yip yip</string>
+    <string name="TV_second_layout_one_home_Activity">My Farms</string>
+    <string name="TV_second_layout_two_home_Activity">My crops</string>
+    <string name="TV_second_layout_three_home_Activity">Sensors</string>
+    <string name="TV_second_layout_four_home_Activity">Irrigations</string>
+    <string name="TV_second_layout_five_home_Activity">Weather</string>
+    <string name="TV_third_layout_temperature_home_Activity">Temperature</string>
+    <string name="TV_third_layout_Soil_home_Activity">Soil Moisture</string>
+    <string name="TV_third_layout_Humidity_home_Activity">Humidity</string>
+    <string name="TV_third_layout_Wind_home_Activity">Wind</string>
+
+    <string name="TV_fourth_layout_check_home_Activity">Good condition</string>
+    <string name="TV_fourth_layout_medium_home_Activity">Normal condition</string>
+    <string name="TV_fourth_layout_cross_home_Activity">Bad condition</string>
+    <string name="title_activity_gas_module">GasModule</string>
+    <string name="title_activity_air_sensor_module">AirSensorModuleActivity</string>
+
+    <!-- activity_air_sensor_module.xml -->
+    <string name="TV_Title_air_sensor_module_Activity">Air Conditions</string>
+    <string name="TV_Second_Title_air_sensor_module_Activity">Tuesday, December 22 2020</string>
+    <string name="title_activity_main_air_sensor_fragment">MainAirSensorFragment</string>
+    <string name="title_activity_second_air_sensor_tab_fragment">SecondAirSensorTabFragment</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_view_adapter">ViewAdapter</string>
+    <string name="title_activity_sensors_main">SensorsMainActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

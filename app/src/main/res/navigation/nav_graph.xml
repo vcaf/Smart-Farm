@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/cropListFragment">
+
+    <fragment
+        android:id="@+id/cropDetailsFragment"
+        android:name="com.avansb.smartfarm.crops.CropDetailsFragment"
+        android:label="CropDetailsFragment"
+        tools:layout="@layout/crop_details_fragment" />
+    <fragment
+        android:id="@+id/cropListFragment"
+        android:name="com.avansb.smartfarm.crops.CropListFragment"
+        android:label="CropListFragment"
+        tools:layout="@layout/crop_list_fragment">
+        <action
+            android:id="@+id/action_cropListFragment_to_cropDetailsFragment"
+            app:destination="@id/cropDetailsFragment" />
+        <action
+            android:id="@+id/action_cropListFragment_to_cropAddFragment"
+            app:destination="@id/cropAddFragment" />
+        <action
+            android:id="@+id/action_cropListFragment_to_cropStateEditFragment"
+            app:destination="@id/cropStateEditFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cropAddFragment"
+        android:name="com.avansb.smartfarm.crops.CropAddFragment"
+        android:label="CropAddFragment"
+        tools:layout="@layout/crop_add_fragment" />
+    <fragment
+        android:id="@+id/cropStateEditFragment"
+        android:name="com.avansb.smartfarm.crops.CropStateEditFragment"
+        android:label="crop_state_edit"
+        tools:layout="@layout/crop_state_edit" >
+        <action
+            android:id="@+id/action_cropStateEditFragment_to_cropListFragment"
+            app:destination="@id/cropListFragment" />
+    </fragment>
+</navigation>

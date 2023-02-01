@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cropstate_layout"
+    android:layout_width="match_parent"
+    android:layout_height="500dp"
+    android:background="@color/GrayLight">
+
+    <TextView
+        android:id="@+id/tv_crpst_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/nunito_semibold"
+        android:gravity="center"
+        android:textColor="@color/textColor"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toTopOf="@+id/gridlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="CropName" />
+
+    <GridLayout
+        android:id="@+id/gridlayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:rowCount="4"
+        app:layout_constraintBottom_toTopOf="@+id/btn_crpst_edit"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_crpst_title">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/crop_moisture" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/temperature_celsius_fever_forecast_thermometer_38948" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/humidity_forecast_hydration_precipitation_temperature_weather_38924" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            app:srcCompat="@drawable/wind_air_turbine_weather_windy_38919" />
+
+        <LinearLayout
+            android:id="@+id/ll_soilmoisture"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_soil_labels"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_min_soil_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="min soilmoisture"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp" />
+
+                <TextView
+
+                    android:id="@+id/tv_max_soil_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="max soilmoisture"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_soil_values"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_min_soil_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    tools:text="10" />
+
+                <TextView
+
+                    android:id="@+id/tv_max_soil_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    tools:text="70" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_temp_labels"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+
+
+                    android:id="@+id/tv_min_temp_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="min temperature"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp" />
+
+                <TextView
+
+
+                    android:id="@+id/tv_max_temp_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="max temperature"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_temp_values"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+
+
+                    android:id="@+id/tv_min_temp_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    tools:text="5" />
+
+                <TextView
+
+                    android:id="@+id/tv_max_temp_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    tools:text="21" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_humidity"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_humid_labels"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/tv_min_humid_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="min humidity"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp" />
+
+                <TextView
+
+                    android:id="@+id/tv_max_humid_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="max humidity"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_humid_values"
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/tv_min_humid_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    tools:text="59" />
+
+                <TextView
+
+                    android:id="@+id/tv_max_humid_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    tools:text="100" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_wind"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/tv_max_wind_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="max windspeed"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp" />
+                <TextView
+
+                    android:id="@+id/tv_wind_drctn_lbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito_semibold"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:text="wind direction"
+                    android:textColor="@color/textColor"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="175dp"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:id="@+id/tv_max_wind_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    tools:text="75" />
+                <TextView
+
+                    android:id="@+id/tv_wind_direction"
+                    android:layout_width="match_parent"
+                    android:layout_height="22.5dp"
+                    android:fontFamily="@font/nunito"
+                    android:gravity="center_vertical"
+                    android:paddingStart="5dp"
+                    android:paddingEnd="5dp"
+                    android:textColor="@color/textColor"
+                    android:textSize="14sp"
+                    tools:text="180" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/btn_crpst_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Edit"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridlayout" />
+
+    <Button
+        android:id="@+id/btn_crpst_cncl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Cancel"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gridlayout" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

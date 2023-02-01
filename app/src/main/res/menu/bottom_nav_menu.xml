@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/cropAddFragment"
+        android:title="Add Crop" />
+    <item
+        android:id="@+id/cropListFragment"
+        android:title="Crops" />
+</menu>

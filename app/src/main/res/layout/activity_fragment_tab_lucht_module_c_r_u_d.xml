@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/air_sensor_fragment_layout"
+    tools:context=".FragmentTabLuchtModuleCRUD">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="40dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/microchip"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="15dp"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:layout_width="265dp"
+            android:layout_height="wrap_content"
+            android:text="Air module general information"
+            android:textSize="25dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

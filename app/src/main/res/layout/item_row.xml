@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@android:color/white">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp">
+        <TextView
+            android:id="@+id/TV_title_ModId_item_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="LuchtMod: "/>
+        <TextView
+            android:id="@+id/TV_ModId_item_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:layout_toRightOf="@+id/TV_title_ModId_item_row"
+            android:textSize="16sp"
+            android:text="LuMod1"/>
+
+        <ImageView
+            android:id="@+id/IV_humidity_percent_item_row"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/drop"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="8dp"/>
+
+        <TextView
+            android:id="@+id/TV_humidity_percent_module_item_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/IV_humidity_percent_item_row"
+            android:textColor="@android:color/black"
+            android:text="62"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/TV_humidity_percent_item_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_toRightOf="@+id/TV_humidity_percent_module_item_row"
+            android:textColor="@android:color/black"
+            android:text="@string/TV_percent_sign"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/TV_humidity_item_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/IV_humidity_percent_item_row"
+            android:layout_below="@+id/TV_humidity_percent_item_row"
+            android:textColor="@color/Gray"
+            android:text="@string/TV_Humidity"/>
+
+        <ImageView
+            android:id="@+id/IV_temperature_item_row"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/celsius"
+            android:layout_toLeftOf="@+id/TV_temperature_item_row"/>
+
+        <TextView
+            android:id="@+id/TV_temperature_celcius_module_item_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/IV_temperature_item_row"
+            android:textColor="@android:color/black"
+            android:text="22"/>
+
+        <TextView
+            android:id="@+id/TV_temperature_celcius_item_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/TV_temperature_celcius_module_item_row"
+            android:textColor="@android:color/black"
+            android:text="@string/TV_celcius_sign"/>
+
+        <TextView
+            android:id="@+id/TV_temperature_item_row"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/TV_humidity_percent_item_row"
+            android:layout_marginEnd="50dp"
+            android:textColor="@color/Gray"
+            android:text="@string/TV_temperature"/>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
