@@ -13,8 +13,8 @@ The sensor I worked on was the air sensor where the focus is in this read me fil
 #### Sign up Page
 ![sign-up   forgot password pages](https://user-images.githubusercontent.com/78371221/216364983-53562926-74a0-4228-b23c-5ea473ab153d.gif)
 
-#### Air Module![luchtmodule](https://user-images.githubusercontent.com/78371221/216365066-337fc612-fc89-419e-bea3-cc619a50e784.gif)
-![Uploading luchtmodule.gif…]()
+#### Air Module
+![luchtmodule](https://user-images.githubusercontent.com/78371221/216365262-6f18ea5f-5207-47d0-84bf-d396ffbc0d9d.gif)
 
 ##### Disclaimer
 The air module page has no data of the sensor due to the reason that the sensor is not functioning anymore.
