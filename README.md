@@ -14,9 +14,11 @@ The air module page has no data of the sensor due to the reason that the sensor 
 <img src="https://user-images.githubusercontent.com/78371221/216365009-e8b6f490-2c20-47fc-b655-6dc81801197e.gif" width="200" height="450">
 
 #### Sign up Page
+<img src="https://user-images.githubusercontent.com/78371221/216364983-53562926-74a0-4228-b23c-5ea473ab153d.gif" width="200" height="450">
 ![sign-up   forgot password pages](https://user-images.githubusercontent.com/78371221/216364983-53562926-74a0-4228-b23c-5ea473ab153d.gif)
 
 #### Air Module
+<img src="https://user-images.githubusercontent.com/78371221/216365262-6f18ea5f-5207-47d0-84bf-d396ffbc0d9d.gif" width="200" height="450">
 ![luchtmodule](https://user-images.githubusercontent.com/78371221/216365262-6f18ea5f-5207-47d0-84bf-d396ffbc0d9d.gif)
 
 
