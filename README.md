@@ -7,6 +7,9 @@ This way we can give farmers insight and control into their crops with this info
 Further, this project was conducted with three other students, where each student worked on a sensor. 
 The sensor I worked on was the air sensor where the focus is in this read me file.
 
+##### Disclaimer
+The air module page has no data of the sensor due to the reason that the sensor is not functioning anymore.
+
 #### Login Page
 ![login](https://user-images.githubusercontent.com/78371221/216365009-e8b6f490-2c20-47fc-b655-6dc81801197e.gif)
 
@@ -16,8 +19,7 @@ The sensor I worked on was the air sensor where the focus is in this read me fil
 #### Air Module
 ![luchtmodule](https://user-images.githubusercontent.com/78371221/216365262-6f18ea5f-5207-47d0-84bf-d396ffbc0d9d.gif)
 
-##### Disclaimer
-The air module page has no data of the sensor due to the reason that the sensor is not functioning anymore.
+
 
 
 
